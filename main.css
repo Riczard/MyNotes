@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, div, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body, html {
+	height: 100%;
+  width: 100%;
+}
+
+body {
+  line-height: 0;
+  font-family: 'Jim Nightshade', cursive;
+  background-color: darkgreen;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0%;
+  width: 100%;
+}
+
+h1 {
+    color: blanchedalmond;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 300%;
+}
+
+
+header{
+  text-align:center;
+  margin:auto;
+}
+
+/* /////////////Button //////////////// */
+
+#btn {
+  display: block;
+  position: a;
+  margin: 5% auto 5% auto;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  color:black;
+  background-color:wheat;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#btn:hover {background-color:white}
+
+#btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* //////////// Notes Container ////// */
+
+#notes-container {
+  display: grid;
+  grid-gap: 3%;
+  background-color: transparent;
+  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+}
+
+.note-header {
+  display:inline-block;
+  border:1px solid #aaaaaa;
+  grid-area: header;
+  background-color: coral;
+  overflow: auto;
+  text-align: center;
+  padding: 10px;
+  margin: 2%;
+}
+
+.note-delete {
+  grid-area: delete;
+}
+
+.note-text {
+  grid-area: text;
+  
+}
+
+.note {
+  height: 200px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 250px 50px;
+  background-color: blueviolet;
+  border: transparent;
+  justify-content: center;
+  
+  grid-template-areas: 
+    "header delete"
+    "text text";
+
+}
+
+.delete-btn {
+  text-align: center;
+}
+
+textarea{
+  margin: 2%;
+  height: 147px;
+  width: 280px;
+  max-width: 280px;
+  max-height: 150px;
+  min-width: 280px;
+  min-height: 150px;
+}
+
+h3 {
+  margin: 4%;
+}
